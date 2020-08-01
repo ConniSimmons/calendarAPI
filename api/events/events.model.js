@@ -6,37 +6,37 @@ const eventsSchema = new mongoose.Schema({
     title: {
       type: String,
       unique: false,
-      //required: true,
+      required: true,
     },
     start: {
       type: Date,
       unique: false,
-      //required: true,
+      required: false,
     },
     end: {
       type: Date,
       unique: false,
-      //required: false,
+      required: false,
     },
     desc: {
       type: String,
       unique: false,
-      //required: true,
+      required: false,
     },
     openSlot: {
       type: Boolean,
       unique: false,
-      //required: false,
+      required: false,
     },
     openEvent: {
       type: Boolean,
       unique: false,
-      //required: false,
+      required: false,
     },
     category: {
       type: String,
       unique: false,
-      //required: true,
+      required: true,
     }  
 })
       

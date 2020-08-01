@@ -68,9 +68,11 @@ module.exports = function(Model)
             };
             Model.get(query, (err, result) => {
                 if (err) {
+                    console.log("Error from findByID function: ", err);
                     handleError(res, err);
                     return;
                 }
+                (result) => console.log("results of findbyID: ", result.json())
                 res.json(result);
             })
         },
